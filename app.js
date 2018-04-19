@@ -70,7 +70,7 @@ let obj = {};
         console.log(obj);
         
 
-    }
+    });
         
         
 
@@ -81,4 +81,4 @@ let obj = {};
        
                             
 
- 
+}
