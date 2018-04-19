@@ -8,46 +8,70 @@
 </head>
 <body>
     
-    <div>Build a Pet!</div>
-    <br>
-    <div>Pet Name: </div>
-    <input type="text" id="name">
-    <br>
-    <div>Type of Animal</div>
-    <select id="type">
-        <option value="Lion">Lion</option>
-        <option value="A Headless Chicken">A Headless Chicken</option>
-        <option value="A Fly">A Fly</option>
-        <option value="">A Gatorade Bottle</option>
-    </select>
-    <br>
-    <div>Number Of Legs</div>
-    <input type="radio" name="legs" value="2" id="2"> 2
-    <input type="radio" name="legs" value="4" id="4"> 4
-    <input type="radio" name="legs" value="6" id="6"> 6
-    <input type="radio" name="legs" value="8" id="8"> 8
+    <form action="" id="form">
+        <div id="title">Build a Pet!</div>
+        <br>
+        <input type="text" id="name" placeholder="Pet Name">
+        <br>
+        <div id="typetitle">Type of Animal</div>
+        <select id="type">
+            <option value="Lion" class="typeof" id="lion">A Lion</option>
+            <option value="A Robot Chicken" class="typeof" id="chicken">A Chicken</option>
+            <option value="A Fly" class="typeof" id="fly">A Fly</option>
+            <option value="A Gatorade Bottle" class="typeof" id="gatoradebottle">A Gatorade Bottle</option>
+            <option value="A Dog" class="typeof" id="dog">A Dog</option>
+            <option value="A Human" class="typeof" id="human">A Human</option>
+            <option value="A Space Monkey" class="typeof" id="monkey">A Space Monkey</option>
+            <option value="A NERF Gun" class="typeof" id="nerfgun">A NERF Gun</option>
+            <option value="A Banana" class="typeof" id="banana">A Banana</option>
+            <option value="Donlad Trump" class="typeof" id="trump">Donald Trump</option>
+            <option value="Finka from RS6" class="typeof" id="finka">Finka from R6S</option>
+            <option value="An alligator" class="typeof" id="alligator">An Alligator</option>
+            <option value="The Default Fortnite Character" class="typeof" id="fortnite">The Default Fortnite Character</option>
+            <option value="A Wizard" class="typeof" id="wizard">A Wizard</option>
+            <option value="Ice Cube from Friday" class="typeof" id="icecube">Ice Cube from Friday</option>
+        </select>
+        <br>
 
-    <div>Special Abilities</div>
-    <input type="checkbox" name="powers" value="Laser Vision" > Laser Vision <br>
-    <input type="checkbox" name="powers" value="Ability to Fly" > Ability to Fly <br>
-    <input type="checkbox" name="powers" value="Super Smart" > Super Smart <br>
-    <input type="checkbox" name="powers" value="Knows Karate" > Knows Karate <br>
+        <div id="legtitle">Number Of Legs</div>
 
-    <div>Pet's Email: </div>
-    <input type="email" name="usremail">
-
-    <br>
-
-    <div>Pet's Password</div>
-    <input type="password" name="password">
-
-    <br>
-
-    <div>Pet Description: </div>
-    <textarea name="desc" cols="30" rows="10"></textarea>
-    <br>
-    <button id="Submit">Submit</button>
-    <button id="SeeData">See Data</button>
+        <div id="styled-input">
+            <input type="radio" name="legs" value="2" class="legs" id="two"> 2
+            <input type="radio" name="legs" value="4" class="legs" id="four"> 4
+            <input type="radio" name="legs" value="6" class="legs" id="six"> 6
+            <input type="radio" name="legs" value="8" class="legs" id="eight"> 8
+        </div>
+    
+        <div id="abilitytitle">Special Abilities</div>
+        <div class="powerss">
+            <input type="checkbox" name="powers" value="Laser Vision" class="powers" id="lv"> Laser Vision <br>
+            <img src="" alt="" id="lvp" height="150px" width="250px">
+            <input type="checkbox" name="powers" value="Ability to Fly" class="powers" id="atf"> Ability to Fly <br>
+            <input type="checkbox" name="powers" value="Super Smart" class="powers" id="ss"> Super Smart <br>
+            <input type="checkbox" name="powers" value="Knows Karate" class="powers" id="kk"> Knows Karate <br>
+            <input type="checkbox" name="powers" value="X-Ray Vision" class="powers" id="xrv"> X-Ray Vision <br>
+            <input type="checkbox" name="powers" value="Summon Nukes" class="powers" id="sn"> Summon Nukes <br>
+            <input type="checkbox" name="powers" value="Can Slow Down Time" class="powers" id="csdt"> Can Slow Time Down <br>
+            <input type="checkbox" name="powers" value="Mega Obesity" class="powers" id="mo"> Mega Obesity <br>
+            <label for="powerss"></label>
+        </div>
+    
+        <div id="emailtitle">Information </div> 
+        <input type="email" name="usremail" id="email" placeholder="Pets Email">
+    
+        <br>
+    
+        <input type="password" name="password" id="password" placeholder="Password">
+    
+        <br>
+    
+        <textarea name="desc" cols="30" rows="10" id="desc"></textarea>
+        <br>
+        <button id="Submit">Submit</button>
+        <button id="data">See Data</button>
+        <h3 id="print"></h3>
+        <a href="./assets/400.jpg" id="download" download>Click me to download your pet!</a>
+    </form>
 
 
     <link rel="stylesheet" href="style.css">
